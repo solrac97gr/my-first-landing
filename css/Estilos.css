@@ -1,0 +1,249 @@
+.header{
+  background-color:#27ae60;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+.header a{
+  color:white;
+  /*font-weight:bold;*/
+  text-decoration: none;
+}
+
+body{
+  font-family: 'Roboto',sans-serif;
+  margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-style: italic; /*cursiva*/
+
+}
+h1{
+  font-size: 30px;
+  line-height: 1.5em;
+  letter-spacing: -.2px;
+  color: white;
+  margin: 0;
+   }
+h1 strong{
+  /*color:#026fff;*/
+ color: #27ae60;
+ font-size: 30px;
+}
+ .details-empresa{
+  width: 500px;
+}
+.details-img{
+  width: 500px;
+}
+.hero{
+  height: 300px;
+  background-color: #1b2127;  
+  background-position-x: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-image{
+  object-fit: cover;
+}
+.infoempresa{
+box-shadow: 3px 5px 33px  #888888;
+border: 1px solid gray;
+border-radius: 10px;
+margin-bottom: 15px;
+padding: 20px;
+margin: 0px;
+margin-bottom: 15px;
+background-color: white;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+.smart{
+  background-color: #27ae60;
+  padding: 20px;
+ 
+}
+h2{
+  text-transform: uppercase;
+  color: black;
+  font-family: 'Surce Sans Pro',sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+ol,ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.logo{
+  margin: 0;
+  height: 90px;
+}
+.menu{
+  height: inherit;
+}
+.header ol{
+  display: flex;
+  height: inherit;
+  
+  height: inherit;
+}
+.header ol li{
+  display: flex;
+  height: inherit;
+  align-items: center;
+}
+.header a{  
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.imglogo{
+  height: 70px;
+  width: 100px;
+}
+.footer{
+  background-color:#1b2127; 
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.footer img{
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+}
+.MisionyVision{
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  
+}
+.infoempresa h6{
+  margin: 10px 0px;
+  font-weight: bold;
+}
+.infoempresa p{
+  font-size:23px;
+}
+.infoempresa strong{
+  font-family: 'Fjalla One','Roboto',sans-serif;
+}
+.services{
+  display: flex;
+  flex-wrap: wrap;
+  }
+.servicio{
+  box-shadow: 3px 5px 33px#888888;
+  border: 1px solid white;
+  margin:10px;
+  width: 310px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color:#f4fbff;
+  flex-shrink: 0;
+  padding: 0;
+}
+.service_image{
+  width: 310px;
+  height: 250px;
+  object-fit: cover;
+   
+}
+.service_description{
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: white;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+.services figure{
+  margin:0;
+}
+.service_description p{
+  text-align: left
+}
+.service_tittle{
+  margin: 20px 20px 20px 20px;
+  color: #27ae60;
+}
+
+.contact{
+  background-color: #27ae60;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items:  center;
+  justify-content: space-between;
+  
+}
+.contact h2{
+  color: white;
+  margin: 10px 10px;
+}
+.social{
+ 
+}
+.social-link{
+  display: inline-block;
+  width:50px;
+  height: 50px; 
+  background-size: 50px 50px;
+  margin: 0 10px;
+}
+.social-link.Twitter{
+  background-image: url(../img/Twitter.svg);
+  }
+.social-link.Facebook{
+  background-image: url(../img/facebook.svg);
+  }
+.social-link.GitHub{
+  background-image: url(../img/GitHub.png);
+  }
+.social-link.Instagram{
+  background-image: url(../img/instagrama.svg);
+  }
+.form-email input{
+  border-color: gray;
+  background-image: url(../img/mail.svg);
+  padding: 10px 20px 10px 25px;  
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+  border-radius: 5px;
+  border-style: solid;
+}
+.form-email button{
+  display: block;  
+  background:transparent;
+  color:white; 
+  padding: 10px 0; 
+  border-radius: 5px;
+  width:100px;
+  margin-top: 10px;
+  font-family: 'Roboto';
+}
+.form-email h3{  
+  font-family: 'Source Sans Pro';
+}
+.container{  
+  width: 1000px;
+  margin:0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
