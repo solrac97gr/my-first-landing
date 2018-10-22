@@ -1,5 +1,5 @@
 .header{
-  background-color:#27ae60;
+  background-color:#2B455B;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -30,7 +30,7 @@ h1{
    }
 h1 strong{
   /*color:#026fff;*/
- color: #27ae60;
+ color: #2B455B;
  font-size: 30px;
 }
  .details-empresa{
@@ -41,7 +41,7 @@ h1 strong{
 }
 .hero{
   height: 300px;
-  background-color: #1b2127;  
+  background-color: #7AA593;  
   background-position-x: right;
   display: flex;
   align-items: center;
@@ -65,13 +65,13 @@ justify-content: space-between;
 
 }
 .smart{
-  background-color: #27ae60;
+  background-color: #D7D0BD;
   padding: 20px;
  
 }
 h2{
   text-transform: uppercase;
-  color: black;
+  color: #7AA593;
   font-family: 'Surce Sans Pro',sans-serif;
   font-weight: bold;
   font-size: 24px;
@@ -108,7 +108,7 @@ ol,ul{
 }
 .imglogo{
   height: 70px;
-  width: 100px;
+  width: 70px;
 }
 .footer{
   background-color:#1b2127; 
@@ -132,6 +132,7 @@ ol,ul{
 .infoempresa h6{
   margin: 10px 0px;
   font-weight: bold;
+  display: none;
 }
 .infoempresa p{
   font-size:23px;
@@ -156,7 +157,7 @@ ol,ul{
 }
 .service_image{
   width: 310px;
-  height: 250px;
+  height: 200px;
   object-fit: cover;
    
 }
@@ -180,7 +181,7 @@ ol,ul{
 }
 
 .contact{
-  background-color: #27ae60;
+  background-color: #2B455B;
   color: white;
   height: 150px;
   display: flex;
@@ -210,6 +211,7 @@ ol,ul{
   }
 .social-link.GitHub{
   background-image: url(../img/GitHub.png);
+  display: none;
   }
 .social-link.Instagram{
   background-image: url(../img/instagrama.svg);
