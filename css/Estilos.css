@@ -3,7 +3,7 @@
   color: white;
   display: flex;
   justify-content: space-between;
-  height: 70px;
+  height: 100px;
 }
 .header a{
   color:white;
@@ -107,8 +107,8 @@ ol,ul{
   padding: 0 10px;
 }
 .imglogo{
-  height: 70px;
-  width: 150px;
+  height: 100px;
+  width: 200px;
 }
 .footer{
   background-color:#1b2127; 
