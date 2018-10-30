@@ -1,9 +1,48 @@
+/*FUENTES*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?ecqeqw');
+  src:  url('../fonts/icomoon.eot?ecqeqw#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ecqeqw') format('truetype'),
+    url('../fonts/icomoon.woff?ecqeqw') format('woff'),
+    url('../fonts/icomoon.svg?ecqeqw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e900";
+}
+/***************************************************/
+.header ol li .border {
+  height: initial;
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin: 14px 0; 
+}
 .header{
   background-color:#2B455B;
   color: white;
   display: flex;
   justify-content: space-between;
   height: 100px;
+  flex-wrap: wrap;
 }
 .header a{
   color:white;
@@ -30,15 +69,20 @@ h1{
    }
 h1 strong{
   /*color:#026fff;*/
- color: #2B455B;
+ color: #1b2127;
  font-size: 30px;
 }
  .details-empresa{
-  width: 500px;
+  width: 50%;
 }
-.details-img{
-  width: 500px;
+.imagecontainerP{
+  width: 50%;
 }
+.imagecontainerP img{
+  max-width: 100%;
+}
+
+
 .hero{
   height: 300px;
   background-color: #7AA593;  
@@ -46,6 +90,7 @@ h1 strong{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .hero-image{
   object-fit: cover;
@@ -62,6 +107,7 @@ background-color: white;
 display: flex;
 align-items: center;
 justify-content: space-between;
+
 
 }
 .smart{
@@ -84,7 +130,7 @@ ol,ul{
 }
 .logo{
   margin: 0;
-  height: 90px;
+  height: 100px;
 }
 .menu{
   height: inherit;
@@ -147,17 +193,18 @@ ol,ul{
 .servicio{
   box-shadow: 3px 5px 33px#888888;
   border: 1px solid white;
-  margin:10px;
-  width: 310px;
+  margin:1%;
+  width: 47%;
   border-radius: 10px;
   overflow: hidden;
   background-color:#f4fbff;
   flex-shrink: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 .service_image{
-  width: 310px;
-  height: 200px;
+  width: 472px;
+  height: 300px;
   object-fit: cover;
    
 }
@@ -187,6 +234,7 @@ ol,ul{
   display: flex;
   align-items:  center;
   justify-content: space-between;
+  flex-wrap: wrap;
   
 }
 .contact h2{
@@ -211,7 +259,7 @@ ol,ul{
   display: none;
   }
 .social-link.Instagram{
-  background-image: url(../img/instagrama.svg);
+  background-image: url(../img/Instagram.svg);
   }
 .form-email input{
   border-color: gray;
@@ -238,11 +286,187 @@ ol,ul{
   font-family: 'Source Sans Pro';
 }
 .container{  
-  width: 1000px;
+  max-width: 1000px;  
+  flex: 1;
   margin:0 auto;
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
   height: inherit;
   flex-wrap: inherit;
+  
+}
+.burger-button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,.5);
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index:4 ;
+  left: 5px;
+  top: 5px;
+  color: white;  
+}
+/*Responsive design*/
+@media screen and (min-width: 1024px){
+.hero-image{
+  width: 500px;
+  height: 100%;
+}
+
+}
+
+@media screen and (max-width: 1024px){
+  .smart{
+    padding: 10px;
+  }
+
+  .container{
+    padding: 0 1em;
+  }
+  .hero{
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+  }
+  h1{
+    font-size: 2em;
+    z-index: 2;
+  }
+  .hero-image{    
+    position:absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+
+  }
+  
+}
+
+@media screen and (max-width: 767px){
+ 
+  .header{
+    display: block;
+    height: auto;
+  }
+  .header ol{
+    display: initial;
+  }
+  .header ol li{
+    height: 50px;    
+    display: initial;
+  }
+  .header a{
+    justify-content: center;
+    height: 40px;
+    font-size: 2em;
+    margin-bottom:.5em; 
+
+    
+  }
+  .header .logo{
+    text-align: center;
+  }
+  .infoempresa{
+    display: block;
+  }
+  .imagecontainerP{
+    width: auto;
+    text-align: center;
+  }
+  .details-empresa{
+    width: auto;
+    font-size: 16px;
+  }
+  .details-empresa h3{
+    font-size: 1.5em;
+  }
+.details-empresa p{
+    font-size: 1em;
+  }
+  .details-empresa h3,p{
+    margin: .4em 0;
+  }
+  .burger-button{
+    display: block;
+  }
+  .menu{
+    position: fixed;    
+    background:rgba(122,165,147,0.8);
+    z-index: 3;
+    top:0;
+    left: -100vw;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    /*height: 100vh;*/
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+
+  }
+  .menu.is-active{
+    left: 0;
+  }
+}
+@media screen and (max-width: 480px){
+  h1{
+    font-size: 1.2em;
+    }
+  h1 strong{
+    font-size: 1em;
+  }
+  .details-empresa{    
+    font-size: 14px;
+  }
+  .services{
+    display: block;
+    width: auto;
+
+  }
+  .servicio{
+    width: auto;
+  }
+  .service_image{
+    width: 100%;    
+  }
+  .service_description{
+    margin:-2em .5em .5em;
+    font-size: 1em;
+  }
+  .contact{
+    display: block;
+    height: auto;
+    padding: 1.5em 0;
+    text-align: center;
+  }
+  .form-email button{
+    margin: 1em auto;
+  }
+  .form-email h2{
+    margin-top:0;
+  }
+  .footer{
+    display: block;
+    text-align: center;
+  }
+  .copyrigth{
+    display: none;
+  }
+  .footerlogo{
+    margin: 0;
+  }
+}
+@media screen and (max-width: 320px){
+  h1{
+    font-size: 1em;
+
+  }
 }
